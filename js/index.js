@@ -126,3 +126,25 @@ pastes.addEventListener('paste', (event) => {
 
     event.preventDefault();
 });
+
+
+let home1 = document.querySelector("nav a")
+console.log(home1)
+home1.setAttribute("href", "https://www.google.com")
+home1 .addEventListener("click", e => {
+    event.preventDefault();
+})
+
+let home2 = document.querySelector("nav a:nth-child(2)")
+console.log(home2)
+home2.setAttribute("href", "https://www.nba.com")
+home2 .addEventListener("click", e => {
+    event.preventDefault();
+})
+
+let spin = document.querySelector(".content-section img")
+console.log(spin)
+spin.addEventListener("mouseover", e =>{
+    e.target.style.transform = "rotate(1e+07deg"
+    e.target.style.transition = "all 180s ease 0s"
+})
